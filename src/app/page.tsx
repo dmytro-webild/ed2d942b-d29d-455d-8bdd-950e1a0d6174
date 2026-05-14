@@ -2,15 +2,15 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FeatureCardTwentyFive from '@/components/sections/feature/FeatureCardTwentyFive';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
+import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import { Award, Shield, Zap } from "lucide-react";
 
 export default function LandingPage() {
@@ -178,20 +178,17 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTen
+      <TestimonialCardSix
+      animationType="slide-up"
       textboxLayout="split"
       useInvertedBackground={true}
       testimonials={[
         {
-          id: "1",          title: "Great Experience",          quote: "Singh Auto made my purchase seamless and stress-free.",          name: "Sarah Johnson",          role: "CEO",          imageSrc: "http://img.b2bpic.net/free-photo/person-giving-order-customer-curbside-pickup_23-2149106362.jpg"},
+          id: "1",          name: "Sarah Johnson",          handle: "@sjohnson",          testimonial: "Singh Auto made my purchase seamless and stress-free.",          imageSrc: "http://img.b2bpic.net/free-photo/person-giving-order-customer-curbside-pickup_23-2149106362.jpg"},
         {
-          id: "2",          title: "Highly Recommend",          quote: "The team was knowledgeable and helped me find the perfect car.",          name: "Michael Chen",          role: "CTO",          imageSrc: "http://img.b2bpic.net/free-photo/elderly-business-woman-office-isolated_1303-21369.jpg"},
+          id: "2",          name: "Michael Chen",          handle: "@mchen",          testimonial: "The team was knowledgeable and helped me find the perfect car.",          imageSrc: "http://img.b2bpic.net/free-photo/elderly-business-woman-office-isolated_1303-21369.jpg"},
         {
-          id: "3",          title: "Top Quality",          quote: "Fantastic service and great vehicle selection.",          name: "Emily Rodriguez",          role: "Director",          imageSrc: "http://img.b2bpic.net/free-photo/family-summer-forest-by-open-trunk_1157-35904.jpg"},
-        {
-          id: "4",          title: "Very Happy",          quote: "Excellent support after the sale. Truly appreciate it.",          name: "David Kim",          role: "Manager",          imageSrc: "http://img.b2bpic.net/free-photo/woman-with-thumbs-up_1149-1163.jpg"},
-        {
-          id: "5",          title: "Perfect Choice",          quote: "My new SUV is exactly what I wanted. Thank you!",          name: "Linda Smith",          role: "Architect",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-female-bus-driver_23-2151589863.jpg"},
+          id: "3",          name: "Emily Rodriguez",          handle: "@erod",          testimonial: "Fantastic service and great vehicle selection.",          imageSrc: "http://img.b2bpic.net/free-photo/family-summer-forest-by-open-trunk_1157-35904.jpg"},
       ]}
       title="Trusted by Drivers Everywhere"
       description="See why so many families and professionals trust us for their vehicle needs."
@@ -199,39 +196,22 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCenter
-      useInvertedBackground={false}
-      background={{
-        variant: "gradient-bars"}}
-      tag="Get In Touch"
-      title="Schedule a Test Drive"
-      description="Found a vehicle you like? Get in touch with us to schedule an appointment today."
+      <ContactSplitForm
+      title="Visit Our Dealership"
+      description="Located in the heart of the city, stop by to see our inventory in person."
+      inputs={[
+        { name: "fullName", type: "text", placeholder: "Full Name", required: true },
+        { name: "email", type: "email", placeholder: "Email Address", required: true }
+      ]}
+      textarea={{ name: "message", placeholder: "How can we help?" }}
     />
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
+      <FooterLogoReveal
       logoText="Singh Auto"
-      columns={[
-        {
-          title: "Menu",          items: [
-            {
-              label: "Inventory",              href: "#inventory"},
-            {
-              label: "About",              href: "#about"},
-            {
-              label: "Contact",              href: "#contact"},
-          ],
-        },
-        {
-          title: "Legal",          items: [
-            {
-              label: "Privacy Policy",              href: "#"},
-            {
-              label: "Terms",              href: "#"},
-          ],
-        },
-      ]}
+      leftLink={{ text: "Inventory", href: "#inventory" }}
+      rightLink={{ text: "Contact", href: "#contact" }}
     />
   </div>
       </ReactLenis>
