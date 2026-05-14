@@ -56,15 +56,15 @@ export default function LandingPage() {
       ]}
       mediaItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/happy-customers-car-dealership_23-2149106169.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/happy-customers-car-dealership_23-2149106169.jpg?_wi=1",
           imageAlt: "Showroom Display",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/handsome-elegant-man-car-salon_1157-20997.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/handsome-elegant-man-car-salon_1157-20997.jpg?_wi=1",
           imageAlt: "SUV Scenic",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-hightech-factory_645730-755.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-hightech-factory_645730-755.jpg?_wi=1",
           imageAlt: "Mechanical Excellence",
         },
         {
@@ -126,7 +126,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-people-red-car_23-2149204045.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/happy-customers-car-dealership_23-2149106169.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/happy-customers-car-dealership_23-2149106169.jpg?_wi=2",
           imageAlt: "luxury car dealership interior",
         },
         {
@@ -141,7 +141,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-photo/more-concepts-we-share-better_329181-17092.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/handsome-elegant-man-car-salon_1157-20997.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/handsome-elegant-man-car-salon_1157-20997.jpg?_wi=2",
           imageAlt: "luxury car dealership interior",
         },
         {
@@ -156,7 +156,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-photo/man-sitting-car-night_23-2149001289.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-hightech-factory_645730-755.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-hightech-factory_645730-755.jpg?_wi=2",
           imageAlt: "luxury car dealership interior",
         },
       ]}
