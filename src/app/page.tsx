@@ -199,6 +199,7 @@ export default function LandingPage() {
       <ContactSplitForm
       title="Visit Our Dealership"
       description="Located in the heart of the city, stop by to see our inventory in person."
+      useInvertedBackground={false}
       inputs={[
         { name: "fullName", type: "text", placeholder: "Full Name", required: true },
         { name: "email", type: "email", placeholder: "Email Address", required: true }
